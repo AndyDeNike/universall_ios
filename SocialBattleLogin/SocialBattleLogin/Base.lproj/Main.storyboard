@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SocialBattleLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="F0a-LI-hf2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpm-2F-cyy" userLabel="FirstButton">
+                                <rect key="frame" x="64.5" y="413.5" width="285" height="69"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign in with Facebook" backgroundImage="FB">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gB2-GJ-Xr1" userLabel="SecondButton">
+                                <rect key="frame" x="64.5" y="492.5" width="285" height="69"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign in with Google" backgroundImage="Google">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kon-Jn-pfi" userLabel="Third Button">
+                                <rect key="frame" x="64.5" y="571.5" width="285" height="69"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Sign in with Email" backgroundImage="Email">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bn-aQ-tMU">
+                                <rect key="frame" x="105" y="372.5" width="204" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Me FAQs" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AR6-D1-3c9">
+                                <rect key="frame" x="152" y="222" width="110.5" height="120.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="F0a-LI-hf2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="ILP-XF-1RZ"/>
+                            <constraint firstItem="Kon-Jn-pfi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pwq-cP-gr5"/>
+                            <constraint firstAttribute="top" secondItem="F0a-LI-hf2" secondAttribute="top" id="Rkt-1F-ChS"/>
+                            <constraint firstItem="AR6-D1-3c9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S8m-wc-Jz5"/>
+                            <constraint firstItem="jpm-2F-cyy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ceA-FQ-fPO"/>
+                            <constraint firstItem="Kon-Jn-pfi" firstAttribute="top" secondItem="gB2-GJ-Xr1" secondAttribute="bottom" constant="10" id="dS8-9P-K8H"/>
+                            <constraint firstItem="jpm-2F-cyy" firstAttribute="top" secondItem="4bn-aQ-tMU" secondAttribute="bottom" constant="20" id="fkG-rT-Ocj"/>
+                            <constraint firstItem="4bn-aQ-tMU" firstAttribute="top" secondItem="AR6-D1-3c9" secondAttribute="bottom" constant="30" id="lub-tt-Hg9"/>
+                            <constraint firstItem="F0a-LI-hf2" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="qaF-Y7-Rvf"/>
+                            <constraint firstItem="4bn-aQ-tMU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s5D-bM-bPE"/>
+                            <constraint firstItem="F0a-LI-hf2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sMX-od-v5h"/>
+                            <constraint firstItem="gB2-GJ-Xr1" firstAttribute="top" secondItem="jpm-2F-cyy" secondAttribute="bottom" constant="10" id="vcw-Al-5aM"/>
+                            <constraint firstItem="gB2-GJ-Xr1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yPq-Z2-jIm"/>
+                            <constraint firstItem="jpm-2F-cyy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zkh-VD-gDV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="18.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="414" height="896"/>
+        <image name="Email" width="285" height="69"/>
+        <image name="FB" width="285" height="69"/>
+        <image name="Google" width="285" height="69"/>
+    </resources>
+</document>
